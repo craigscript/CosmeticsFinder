@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.alberteinstein.findation" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Cosmetics Finder</name>
+    <description>
+        MVP version of Cosmetics Finder
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+   <platform name="ios">
+       <allow-intent href="itms:*" />
+       <allow-intent href="itms-apps:*" />
+       <icon src="res/ios/icons/Icon-180@3x.png" width="180" height="180" />
+       <!-- iOS 7.0+ -->
+       <!-- iPhone / iPod Touch  -->
+       <icon src="res/ios/icons/Icon-60.png" width="60" height="60" />
+       <icon src="res/ios/icons/Icon-120.png" width="120" height="120" />
+       <!-- iPad -->
+       <icon src="res/ios/icons/Icon-76.png" width="76" height="76" />
+       <icon src="res/ios/icons/Icon-152.png" width="152" height="152" />
+       <!-- iOS 6.1 -->
+       <!-- Spotlight Icon -->
+       <icon src="res/ios/icons/Icon-40.png" width="40" height="40" />
+       <icon src="res/ios/icons/Icon-40@2x.png" width="80" height="80" />
+       <!-- iPhone / iPod Touch -->
+       <icon src="res/ios/icons/Icon.png" width="57" height="57" />
+       <icon src="res/ios/icons/Icon@2x.png" width="114" height="114" />
+       <!-- iPad -->
+       <icon src="res/ios/icons/Icon-72.png" width="72" height="72" />
+       <icon src="res/ios/icons/Icon-72@2x.png" width="144" height="144" />
+       <!-- iPhone Spotlight and Settings Icon -->
+       <icon src="res/ios/icons/Icon-29.png" width="29" height="29" />
+       <icon src="res/ios/icons/Icon-58.png" width="58" height="58" />
+
+       <icon src="res/ios/icons/Icon-29.png" width="29" height="29" />
+       <icon src="res/ios/icons/Icon-58.png" width="58" height="58" />
+       <!-- iPad Spotlight and Settings Icon -->
+       <splash src="res/ios/screen/Default.png"/>
+       <splash src="res/ios/screen/Default~iphone.png" width="320" height="480"/>
+       <splash src="res/ios/screen/Default@2x~iphone_640x960.png" width="640" height="960"/>
+       <splash src="res/ios/screen/Default-Portrait~ipad_768x1024.png" width="768" height="1024"/>
+       <splash src="res/ios/screen/Default-Portrait@2x~ipad_1536x2048.png" width="1536" height="2048"/>
+       <splash src="res/ios/screen/Default-Landscape~ipad_1024x768.png" width="1024" height="768"/>
+       <splash src="res/ios/screen/Default-Landscape@2x~ipad_2048x1536.png" width="2048" height="1536"/>
+       <splash src="res/ios/screen/Default-568h@2x~iphone_640x1136.png" width="640" height="1136"/>
+       <splash src="res/ios/screen/Default-1242@3x~iphone6s-portrait_1242x2208.png" width="1242" height="2208"/>
+       <splash src="res/ios/screen/Default-Portrait@2x~ipad_1536x2008.png" width="1536" height="2008"/>
+       <splash src="res/ios/screen/Default~ipad.png" width="1242" height="2008"/>
+       <splash src="res/ios/screen/Default-Landscape@2x~ipad_2048x1496.png" width="2048" height="1496"/>
+       <splash src="res/ios/screen/Default-1242@3x~iphone6s-landscape_2208x1242.png" width="2208" height="1242"/>
+       <splash src="res/ios/screen/Default-750@2x~iphone6-landscape_1334x750.png" width="1334" height="750"/>
+       <splash src="res/ios/screen/Default-Landscape~ipad_1024x748.png" width="1024" height="748"/>
+       <splash src="res/ios/screen/Default-750@2x~iphone6-portrait_750x1334.png" width="750" height="1334"/>
+   </platform>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="backupWebStorage" value="local" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+</widget>

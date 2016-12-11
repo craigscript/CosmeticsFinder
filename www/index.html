@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Findation</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+</head>
+<body>
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+
+
+<!-- Views-->
+<div class="views">
+<!-- Your main view, should have "view-main" class-->
+<div class="view view-main">
+<!-- Top Navbar-->
+<div class="navbar">
+    <!-- Navbar inner for Index page-->
+    <div data-page="index" class="navbar-inner">
+        <!-- We have home navbar without left link-->
+        <div class="center sliding color-white">Ver 0.0.3(0.1.5)</div>
+    </div>
+    <!-- Navbar inner for Main page-->
+    <div data-page="main" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Back</span></a></div>
+        <div class="center sliding color-white"></div>
+    </div>
+    <!-- Navbar inner for Search page-->
+    <div data-page="search" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Menu</span></a></div>
+        <div class="center sliding color-white"></div>
+    </div>
+    <div data-page="searchresult" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Menu</span></a></div>
+        <div class="center sliding color-white">Search</div>
+    </div>
+    <!-- Navbar inner for Form page-->
+    <div data-page="beautypicks" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Menu</span></a></div>
+        <div class="center sliding color-white">Beauty Picks</div>
+    </div>
+    <div data-page="schedule" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Menu</span></a></div>
+        <div class="center sliding color-white">Schedule an Interview</div>
+    </div>
+
+    <div data-page="topbrands" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Back</span></a></div>
+        <div class="center sliding color-white">Top brands</div>
+    </div>
+    <div data-page="top10favorites" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Back</span></a></div>
+        <div class="center sliding color-white">Top 10 Favorites</div>
+    </div>
+    <div data-page="topproducts" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Back</span></a></div>
+        <div class="center sliding color-white">Top Products</div>
+    </div>
+    <div data-page="topshades" class="navbar-inner cached">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Back</span></a></div>
+        <div class="center sliding color-white">Top Shades</div>
+    </div>
+</div>
+<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+<div class="pages navbar-through toolbar-through">
+<!-- Index Page-->
+<div data-page="index" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+        <div class="top-margin">
+        </div>
+        <div class="logo">
+        </div>
+        <div class="select-area">
+            <div class="list-block">
+                <form id="login-form" class="store-data">
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">E-mail</div>
+                                    <div class="item-input">
+                                        <input type="email" placeholder="E-mail" name="email" id="loginmail">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-password"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">Password</div>
+                                    <div class="item-input">
+                                        <input type="password" placeholder="Password" name="password"
+                                               id="loginpassword">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div class="below-logo">
+                <a href="" class="go-button" id="btn-signin">
+                    <img src="img/button.png"/>
+                </a>
+            </div>
+            <div class="list-block">
+                <ul>
+                    <li><a href="register.html" class="button active" id="btn-signup">Register</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Page-->
+<div data-page="main" class="page cached">
+    <div class="page-content">
+        <div class="top-margin">
+        </div>
+        <div class="logo">
+        </div>
+        <div class="select-area">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a href="#search" class="item-link">
+                            <div class="item-content">
+                                <div class="item-media">
+                                    <img src="img/bullet01.png"/>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        Find Products In A Store
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#beautypicks" class="item-link">
+                            <div class="item-content">
+                                <div class="item-media">
+                                    <img src="img/bullet02.png"/>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        Beauty Picks
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#schedule" class="item-link">
+                            <div class="item-content">
+                                <div class="item-media">
+                                    <img src="img/bullet03.png"/>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        Schedule a Consultation
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Services Page-->
+<div data-page="search" class="page cached">
+    <div class="page-content">
+
+        <div class="top-margin">
+        </div>
+        <div class="logo">
+        </div>
+        <div class="select-area">
+            <div class="list-block">
+                <ul>
+                    <li class="item-content">
+                        <div class="item-title label">Brand</div>
+                        <div class="item-inner">
+                            <div class="item-input">
+                                <input type="text" placeholder="Brand" id="brand-dropdown"></div>
+                        </div>
+                    </li>
+
+                    <li class="item-content">
+                        <div class="item-title label">Product</div>
+                        <div class="item-inner">
+                            <div class="item-input">
+                                <input type="text" placeholder="Product" id="product-dropdown" autocomplete=""></div>
+                        </div>
+                    </li>
+
+                    <li class="item-content">
+                        <div class="item-title label">Shade</div>
+                        <div class="item-inner">
+                            <div class="item-input">
+                                <input type="text" placeholder="Shade" id="shade-dropdown"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-block">
+                <ul>
+                    <li><a href="#" class="button button-big button-round active" id="btn-search">Search</a></li>
+
+                </ul>
+            </div>
+            <div class="list-block">
+                <ul>
+                    <li><a href="#" class="button" id="btn-prev-search">Previous Search Result</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Search result page -->
+<div data-page="searchresult" class="page cached">
+    <div class="page-content">
+        <div class="content-block">
+            <div class="logo">
+            </div>
+            <div class="list-block">
+                <ul>
+                    <!-- Single chekbox item -->
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <!-- Checked by default -->
+                            <input id="checkbox-all" type="checkbox" name="my-checkbox" value="All Products" checked>
+
+                            <div class="item-media">
+                                <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title color-white">All Products</div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <!-- Checked by default -->
+                            <input id="checkbox-revlon" class="checkbox" type="checkbox" name="my-checkbox"
+                                   value="Revlon">
+
+                            <div class="item-media">
+                                <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title color-white">Revlon</div>
+                            </div>
+                        </label>
+                    </li>
+                    <!-- Another chekbox item -->
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input id="checkbox-covergirl" class="checkbox" type="checkbox" name="my-checkbox"
+                                   value="Cover Girl">
+
+                            <div class="item-media">
+                                <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title color-white">Cover Girl</div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <!-- Checked by default -->
+                            <input id="checkbox-nyx" class="checkbox" type="checkbox" name="my-checkbox" value="Nyx">
+
+                            <div class="item-media">
+                                <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title color-white">Nyx</div>
+                            </div>
+                        </label>
+                    </li>
+                    <!-- Another chekbox item -->
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input id="checkbox-maybelline" class="checkbox" type="checkbox" name="my-checkbox"
+                                   value="Maybelline">
+
+                            <div class="item-media">
+                                <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title color-white">Maybelline</div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input id="checkbox-heb" class="checkbox" type="checkbox" name="my-checkbox"
+                                   value="Heb Stores">
+
+                            <div class="item-media">
+                                <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title color-white">Heb Stores</div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="temp">
+            </div>
+            <div class="content-block">
+                <div class="list-block media-list search-list">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Show page -->
+
+<div data-page="product" class="page cached">
+    <div class="page-content">
+        <div class="content-block">
+
+            <div class="logo">
+            </div>
+            <div class="temp">
+            </div>
+            <div class="select-area">
+                <div class="product-content">
+
+                </div>
+                <div class="store-content">
+                    <div id="map_canvas">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Beauty Picks page-->
+<div data-page="beautypicks" class="page cached">
+    <div class="page-content">
+        <div class="content-block">
+            <div class="logo">
+            </div>
+            <div class="select-area">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="#top10favorites" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Top 10 Favorites
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#topbrands" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Top Brands
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#topproducts" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Top Products
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#topshades" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Top Shades
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-page="schedule" class="page cached">
+    <div class="page-content">
+
+        <div class="top-margin">
+        </div>
+        <div class="logo">
+        </div>
+        <div class="select-area">
+            <form id="schedule-form" class="list-block store-data">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">Name</div>
+                                <div class="item-input">
+                                    <!-- Make sure that input have "name attrobute" -->
+                                    <input type="text" name="name" placeholder="Your name">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-email"></i></div>
+                            <div class="item-inner">
+
+                                <div class="item-title label">E-mail</div>
+                                <div class="item-input">
+                                    <!-- Make sure that input have "name attrobute" -->
+                                    <input type="email" name="email" placeholder="E-mail">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">Date time</div>
+                                <div class="item-input">
+                                    <input type="datetime-local">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">Heb Stores</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="Store Names" id="hebstore-dropdown"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">Associates</div>
+                                <div class="item-input">
+                                    <select id="assoc-dropdown">
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="align-top">
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">Message</div>
+                                <div class="item-input">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </form>
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a href="#" class="button button-big button-round active btn-schedule">SCHEDULE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-page="topbrands" class="page cached">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+        <div class="content-block">
+            <div class="logo">
+            </div>
+            <div class="select-area">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=Oreal" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            L'OREAL
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=CoverGirl" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            COVERGIRL
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=BARE ESCENTUALS" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            BARE ESCENTUALS
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=MAYBELLINE" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            MAYBELLINE
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=MAYBELLINE" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            RIMMEL
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=NYX" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            NYX
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=ELF" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            ELF
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=REVLON" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            REVLON
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=PHYSICIANS FORMULA" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            PHYSICIANS FORMULA
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=brand&&brand_name=BLACK RADIANCE" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            BLACK RADIANCE
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div data-page="top10favorites" class="page cached">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+        <div class="content-block">
+            <div class="logo">
+            </div>
+            <div class="select-area">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="topresult.html?brand_name=MAYBE&&product_name=FIT ME&&shade_name=GOLDEN BEIGE"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            MAYBE FITME FND-GOLDEN BEIGE
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=NYX&&product_name=BB Cream&&shade_name=Nude"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            NYX BB CREAM NUDE
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=TRUE&&product_name=Matt&&shade_name=Nut"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            TRUE MTCH LUMI HLTHY MU NUT BR
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=Oreal&&product_name=Infall&&shade_name=Cocoa"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            LOR INFALL PROMATTE FDN COCOA
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=FS&&product_name=Prime&&shade_name=Blur"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            FS MASTER PRIME BLUR&RED CNT
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=Catalina&&product_name=FDN&&shade_name=Ivory"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            CG OUTLAST FDN CLASS IVORY 805
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=Oreal&&product_name=Match&&shade_name=Ivory"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            LOR TRUE MATCH NAT LIGHT IVORY
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=OReal&&product_name=Match&&shade_name=Soft"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            LOR TRUE MATCH COMPACT SFT SBL
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=NYX&&product_name=Matt&&shade_name=Warm Beige"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            NYX STAYMATTE WARM BEIGE POWDR
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?brand_name=Catalina&&product_name=Oil&&shade_name=soft"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            CG CLEAN OIL CNT LMU 555 SF HY
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div data-page="topproducts" class="page cached">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+        <div class="content-block">
+            <div class="logo">
+            </div>
+            <div class="select-area">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=SKiN TONE MAKEUP" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            SS SKN TONE MAKEUP LT/MD
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=HEALTHY SKIN LIQUID" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            HLTHY SKN LIQ MU #10 CL IV
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=FIT ME FINDATION" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            FITME FND PORCELAIN
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=ultra smith nude beige"
+                               class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            ULTRA SMTH NUDE BEIGE 842
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=radiance" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            RADIANCE LMU CLSC BEIGE
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=soft honey" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            CLEAN LIQ MU 155 SOFT HONEY
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=rich tan" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            FIT ME M/P FDN RICH TAN
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=medium beige 842" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            SMTH MEDIUM BEIGE 842
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=mu beige" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            LINE SMTHNG LIQ MU BEIGE
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=product&&product_name=mu gold beige" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            AD FIRM/LIFT MU GOLD BEIGE
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div data-page="topshades" class="page cached">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+        <div class="content-block">
+            <div class="logo">
+            </div>
+            <div class="select-area">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Nude" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            FND Nude
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Natural" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            FND Natural
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Camel" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Carmel
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Warm Beige" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Warm Beige
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Creme Beige 250" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Creme Beige 250
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Gold Beige" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Gold Beige
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Natural Beige" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Natural Beige
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Streak Natural" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Streak Natural
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Pure Beige" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Pure Beige
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Coconut" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Coconut
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Primer" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Primer
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Oly Rich" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Oly Rich
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topresult.html?mode=shade&&shade_name=Rum Spice" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <img src="img/bullet2.png"/>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            Rum Spice
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Bottom Toolbar-->
+
+</div>
+</div>
+
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+
+</body>
+</html>

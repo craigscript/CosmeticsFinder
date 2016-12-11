@@ -1,0 +1,137 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="#" class="back link theme-white"> <i class="icon icon-back"></i><span
+                class="color-white">Back</span></a></div>
+        <div class="center sliding color-white">User Registration</div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="register" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="content-block">
+                <div class="logo">
+                </div>
+                <div class="select-area">
+                    <div class="list-block">
+                        <form id="register-form" class="store-data">
+                            <ul>
+                                <!-- Text inputs -->
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">User Type</div>
+                                            <div class="item-input">
+                                                <select name="customerType">
+                                                    <option>Employee</option>
+                                                    <option>Customer</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">First Name</div>
+                                            <div class="item-input">
+                                                <input type="text" id="first-name" name="first-name"
+                                                       placeholder="First name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">Last Name</div>
+                                            <div class="item-input">
+                                                <input type="text" id="last-name" name="last-name"
+                                                       placeholder="Last name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">Phone Number</div>
+                                            <div class="item-input">
+                                                <input type="text" id="phone-number" name="phone-number"
+                                                       placeholder="Your phone number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-url"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">Address</div>
+                                            <div class="item-input">
+                                                <input type="text" id="address1" name="address1"
+                                                       placeholder="Address Line 1">
+                                                <input type="text" id="address2" name="address2"
+                                                       placeholder="Address Line 2">
+                                                <select id="countries" name="countries">
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-email"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">E-mail</div>
+                                            <div class="item-input">
+                                                <input type="email" placeholder="E-mail" name="email" id="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-password"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">Password</div>
+                                            <div class="item-input">
+                                                <input type="password" placeholder="Password" name="password" id="password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-password"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">Confirm Password</div>
+                                            <div class="item-input">
+                                                <input type="password" id="confirm" placeholder="Confirm password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Select -->
+
+                            </ul>
+                            <ul>
+                                <li><a href="#" class="button active" id="btn-register">Register</a></li>
+
+                            </ul>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
